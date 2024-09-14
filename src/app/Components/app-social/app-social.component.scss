@@ -1,0 +1,22 @@
+.social-links {
+    display: flex;
+    align-items: center;
+    gap: 7rem;
+    margin-top: 1.5rem;
+}
+
+i {
+    color: rgb(136, 132, 132);
+}
+
+i:hover {
+    transition: fill 0.3s ease;
+    background: #00B7E9;
+    background: linear-gradient(to right, #00B7E9 0%, #BE05CF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+i {
+    font-size: 60px;
+}

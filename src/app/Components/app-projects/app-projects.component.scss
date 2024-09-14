@@ -1,0 +1,26 @@
+.card{
+    width: 40rem;
+    margin: 3rem;
+    border: 1px solid rgba(0, 0, 0, 0.446);
+}
+
+i {
+    color: rgb(31, 30, 30);
+    font-size: 40px;
+}
+
+i:hover {
+    transition: fill 0.3s ease;
+    background: #00B7E9;
+    background: linear-gradient(to right, #00B7E9 0%, #BE05CF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.card-body {
+    border-top: 1px solid rgba(0, 0, 0, 0.446);
+    padding: 2rem;
+}
+
+h5 {
+    color: rgb(34, 33, 33);
+}

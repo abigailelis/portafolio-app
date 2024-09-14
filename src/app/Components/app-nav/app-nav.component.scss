@@ -1,0 +1,26 @@
+nav {
+    height: 100px;
+}
+
+.container-fluid {
+    padding: 1.5rem;
+}
+
+.container {
+    padding-top: 1rem;
+}
+ul li{
+    padding: 0 10px 0 10px;
+}
+a.title {
+    background: #00B7E9;
+    background: linear-gradient(to right, #00B7E9 0%, #BE05CF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
+a.nav-link{
+    font-size:large;
+}

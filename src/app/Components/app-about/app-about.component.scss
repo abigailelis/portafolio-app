@@ -1,0 +1,20 @@
+li{
+    list-style: none;
+}
+
+section{
+    margin-bottom: 3.5rem;
+}
+
+p{
+    text-align: justify;
+}
+
+span{
+    font-weight: bold;
+    font-size: 35px;
+    background: #00B7E9;
+    background: linear-gradient(to right, #00B7E9 0%, #BE05CF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

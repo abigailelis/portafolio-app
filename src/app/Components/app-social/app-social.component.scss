@@ -20,3 +20,13 @@ i:hover {
 i {
     font-size: 60px;
 }
+
+@media screen and (max-width: 650px) {
+    .social-links {
+        flex-direction: column;
+    }
+
+    i {
+        font-size: 80px;
+    }
+}

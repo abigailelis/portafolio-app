@@ -16,6 +16,7 @@ i:hover {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
 .card-body {
     border-top: 1px solid rgba(0, 0, 0, 0.446);
     padding: 2rem;
@@ -23,4 +24,30 @@ i:hover {
 
 h5 {
     color: rgb(34, 33, 33);
+}
+
+@media screen and (max-width: 650px) {
+    .cards{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .card{
+        width: 100%;
+        margin: 0;
+        margin-bottom: 20px;
+    }
+
+    .card-body{
+        padding: 10px;
+    }
+
+    i {
+        font-size: 20px;
+    }
+
+    h5{
+        font-size:15px;
+    }
 }

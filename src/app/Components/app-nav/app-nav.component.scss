@@ -1,5 +1,6 @@
 nav {
     height: 100px;
+    width: 100%;
 }
 
 .container-fluid {
@@ -23,4 +24,40 @@ a.title {
 
 a.nav-link{
     font-size:large;
+}
+.oculto{
+    display:none;
+}
+
+@media screen and (max-width: 650px) {
+    nav {
+        height: 2%;
+    }
+
+    #menu{
+        flex-direction: column;
+        position:absolute;
+        z-index: 1;
+        background-color: currentColor;
+        padding: 1em;
+        right: 0;
+
+    }
+
+    .container-fluid {
+        padding: 2%;
+        margin:0;
+    }
+
+    a.nav-link{
+        font-size: 1.5em;
+        padding: .09rem;
+    }
+
+    .navbar-toggler{
+        padding: .5em;
+        border: none;
+        transition: none;
+    }
+
 }

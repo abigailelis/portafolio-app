@@ -21,15 +21,11 @@ p {
 }
 
 @media screen and (max-width: 650px) {
-    .content {
+    .container {
         flex-direction: column;
-        width: max-content;
+        justify-content: flex-start;
+        width: 100%;
+        padding: 2rem 1rem;
     }
 
-    .divider {
-        height: 1px;
-        width: 100%;
-        background: var(--red-to-pink-to-purple-horizontal-gradient);
-        margin-block: 1.5rem;
-    }
 }

@@ -4,21 +4,25 @@
       <a class="navbar-brand title">PORTAFOLIO</a>
     </div>
     <div>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
+      <button (click)="desplegarMenu()" class="navbar-toggler" id="menu-toogle" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0" [ngClass]="{'oculto': true}" id="menu">
+          <li (click)="desplegarMenu()" class="nav-item">
             <a class="nav-link active" aria-current="page" [routerLink]="['/home']">HOME</a>
           </li>
-          <li class="nav-item">
+          <li  (click)="desplegarMenu()" class="nav-item">
             <a class="nav-link" [routerLink]="['/projects']">Proyectos</a>
           </li>
-          <li class="nav-item">
+          <li (click)="desplegarMenu()" class="nav-item">
             <a class="nav-link" [routerLink]="['/skills']">Habilidades</a>
           </li>
-          <li class="nav-item">
+          <li  (click)="desplegarMenu()" class="nav-item">
             <a class="nav-link" [routerLink]="['/social']">Contacto</a>
           </li>
-          <li class="nav-item">
+          <li (click)="desplegarMenu()" class="nav-item">
             <a class="nav-link" [routerLink]="['/about']">About Me</a>
           </li>
         </ul>

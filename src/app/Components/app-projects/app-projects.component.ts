@@ -17,7 +17,7 @@ export class AppProjectsComponent implements OnInit{
   {
     name: "Mundial 2022",
     img: "/assets/mundial.PNG",
-    github: "https://github.com/abigailelis/Proyecto-Final-Web2-Mundial_2022.git"
+    github: "https://github.com/PabloPiliavsky/TPE_WEB_PARTE2/tree/main"
   },
   {
     name: "Zombilandia Web 1",

@@ -10,12 +10,12 @@ export class AppProjectsComponent implements OnInit{
 
   projects: Project[] = [
   {
-    name: "Zombilandia Web 2",
+    name: "Zombilandia -  Proyecto Angular",
     img: "/assets/zombilandia.PNG",
     github: "https://github.com/abigailelis/Proyecto-Angular-Zombilandia.git"
   },
   {
-    name: "Mundial 2022",
+    name: "Mundial 2022 Web 2",
     img: "/assets/mundial.PNG",
     github: "https://github.com/PabloPiliavsky/TPE_WEB_PARTE2/tree/main"
   },

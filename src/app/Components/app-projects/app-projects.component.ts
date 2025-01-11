@@ -10,6 +10,11 @@ export class AppProjectsComponent implements OnInit{
 
   projects: Project[] = [
   {
+      name: "QR code component challenge",
+      img: "/assets/Screenshot.PNG",
+      github: "https://github.com/abigailelis/git-test/tree/main/qr-code-component"
+  },
+  {
     name: "Zombilandia -  Proyecto Angular",
     img: "/assets/zombilandia.PNG",
     github: "https://github.com/abigailelis/Proyecto-Angular-Zombilandia.git"

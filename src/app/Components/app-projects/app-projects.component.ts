@@ -10,6 +10,11 @@ export class AppProjectsComponent implements OnInit{
 
   projects: Project[] = [
   {
+      name: "Social links profile challenge",
+      img: "/assets/Screenshot-social-links-profile.PNG",
+      github: "https://github.com/abigailelis/git-test/tree/main/social-links-profile"
+  },
+  {
       name: "Blog preview card challenge",
       img: "/assets/Screenshot-card.PNG",
       github: "https://github.com/abigailelis/git-test/tree/main/blog-preview-card"

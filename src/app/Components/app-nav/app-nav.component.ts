@@ -1,21 +1,26 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { LinkService } from './link.service';
+
+interface Link {
+  name: string;
+  link: string;
+}
 
 @Component({
   selector: 'app-nav',
   templateUrl: './app-nav.component.html',
   styleUrl: './app-nav.component.scss'
 })
-export class AppNavComponent {
-  
-  desplegarMenu() {
-    const menu = document.querySelector('#menu');
-    if (menu != null) {
-      if (menu.classList.contains('oculto'))
-        menu.classList.remove('oculto');
-      else
-        menu.classList.add('oculto');
-    }
 
+export class AppNavComponent implements OnInit {
+
+  links: Link[] = [];
+
+  constructor(private linkService: LinkService) { }
+
+  ngOnInit(): void {
+    this.linkService.getLinks().subscribe((data: Link[]) => {
+      this.links = data;
+    });
   }
 }
-

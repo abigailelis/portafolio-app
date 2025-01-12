@@ -9,9 +9,8 @@ p {
     color: var(--gray-400);
 }
 
-.container {
-    width: 100vw;
-    min-height: 100vh;
+main {
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,11 +19,10 @@ p {
     position: relative;
 }
 
-@media screen and (max-width: 650px) {
+@media (max-width: 650px) {
     .container {
         flex-direction: column;
         justify-content: flex-start;
-        width: 100%;
         padding: 2rem 1rem;
     }
 

@@ -1,66 +1,91 @@
-nav {
-    height: 100px;
+.navbar-nav .nav-link {
+    position: relative;
+}
+
+.navbar-nav .nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(to right, #ffffff 0%, #bec808 100%);
+    /* Color de la línea */
+    transition: width 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover::after {
     width: 100%;
 }
 
-.container-fluid {
-    padding: 1.5rem;
+nav {
+    max-width: 100dvw;
+    padding: .5rem 1rem .5rem 1rem;
 }
 
-.container {
-    padding-top: 1rem;
+.navbar-expand-lg .navbar-collapse {
+    justify-content: flex-end;
 }
-ul li{
-    padding: 0 10px 0 10px;
+
+ul li {
+    padding: 0 1rem 0 1rem;
 }
-a.title {
-    background: #00B7E9;
-    background: linear-gradient(to right, #00B7E9 0%, #BE05CF 100%);
+
+
+a.nav-link {
+    font-size: 1.3rem;
+}
+
+a.nav-link:hover{
+    color: #bec808 100%;
+}
+
+.title {
+    background: linear-gradient(to right, #b6b4b4 0%, #bec808 100%);
+    background-size: 200% 200%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: xx-large;
-    font-weight: bolder;
+    font-size: 2.3rem;
+    font-weight: 800;
+    letter-spacing: .2rem;
+    animation: gradient-animation 5s infinite;
 }
 
-a.nav-link{
-    font-size:large;
-}
-.oculto{
-    display: flex;
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
-@media screen and (max-width: 650px) {
+
+@media (max-width: 991px) {
+
     nav {
-        height: 2%;
-    }
-    .oculto{
-        display:none;
+        width: 100dvw;
+        height: auto;
     }
 
-    #menu{
-        flex-direction: column;
-        position:absolute;
-        z-index: 1;
-        background-color: currentColor;
-        padding: 1em;
-        right: 0;
+    .navbar-nav {
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .navbar-collapse {
+        width: 100dvw;
 
     }
 
-    .container-fluid {
-        padding: 2%;
-        margin:0;
-    }
-
-    a.nav-link{
-        font-size: 1.5em;
-        padding: .09rem;
-    }
-
-    .navbar-toggler{
+    .navbar-toggler {
         padding: .5em;
         border: none;
-        transition: none;
     }
 
 }

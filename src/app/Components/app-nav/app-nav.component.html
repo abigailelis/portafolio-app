@@ -1,32 +1,15 @@
-<nav class="navbar navbar-expand-lg navbar-dark container-fluid bg-dark">
-  <div class="container-fluid">
-    <div>
-      <a class="navbar-brand title">PORTAFOLIO</a>
-    </div>
-    <div>
-      <button (click)="desplegarMenu()" class="navbar-toggler" id="menu-toogle" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0" [ngClass]="{'oculto': false}" id="menu">
-          <li (click)="desplegarMenu()" class="nav-item">
-            <a class="nav-link active" aria-current="page" [routerLink]="['/home']">HOME</a>
-          </li>
-          <li  (click)="desplegarMenu()" class="nav-item">
-            <a class="nav-link" [routerLink]="['/projects']">Proyectos</a>
-          </li>
-          <li (click)="desplegarMenu()" class="nav-item">
-            <a class="nav-link" [routerLink]="['/skills']">Habilidades</a>
-          </li>
-          <li  (click)="desplegarMenu()" class="nav-item">
-            <a class="nav-link" [routerLink]="['/social']">Contacto</a>
-          </li>
-          <li (click)="desplegarMenu()" class="nav-item">
-            <a class="nav-link" [routerLink]="['/about']">About Me</a>
-          </li>
-        </ul>
-      </div>
-    </div>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <span class="navbar-brand title">PORTAFOLIO</span>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav navbar-dark bg-dark">
+      <li class="nav-item" *ngFor="let link of links">
+        <a class="nav-link" [routerLink]="[link.link]">{{ link.name}}</a>
+      </li>
+    </ul>
   </div>
 </nav>

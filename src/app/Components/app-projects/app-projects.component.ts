@@ -20,9 +20,9 @@ export class AppProjectsComponent implements OnInit{
     github: "https://github.com/abigailelis/Proyecto-Final-Web2-Mundial_2022.git"
   },
   {
-    name: "Zombilandia Web 1",
-    img: "/assets/zombilandia_1.PNG",
-    github: "https://github.com/abigailelis/Proyecto-Final-Web2-Mundial_2022.git"
+    name: "Paint",
+    img: "/assets/paint.PNG",
+    github: "https://github.com/abigailelis/Paint/tree/main/Elis_2"
   }
 ]
 

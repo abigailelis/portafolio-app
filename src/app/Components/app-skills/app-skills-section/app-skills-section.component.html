@@ -1,0 +1,10 @@
+<div class="skills-box">
+    <h2>{{ title }}</h2>
+    <div class="skills">
+        <div *ngFor="let skill of skills" class="skill">
+            <i class="{{ skill.class }}"></i>
+            <p>{{ skill.name }}</p>
+        </div>
+    </div>
+</div>
+

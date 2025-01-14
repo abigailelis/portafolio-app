@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { LinkService } from './link.service';
+import { Component, OnInit } from '@angular/core'; 
+import { navLinks } from '../../../config/links';
 
 interface Link {
   name: string;
@@ -7,20 +7,16 @@ interface Link {
 }
 
 @Component({
-  selector: 'app-nav',
-  templateUrl: './app-nav.component.html',
-  styleUrl: './app-nav.component.scss'
+    selector: 'app-nav',
+    templateUrl: './app-nav.component.html',
+    styleUrl: './app-nav.component.scss',
+    standalone: false
 })
 
 export class AppNavComponent implements OnInit {
-
-  links: Link[] = [];
-
-  constructor(private linkService: LinkService) { }
-
-  ngOnInit(): void {
-    this.linkService.getLinks().subscribe((data: Link[]) => {
-      this.links = data;
-    });
-  }
+  links: Link[] = navLinks; 
+  
+  constructor() {} 
+  
+  ngOnInit(): void {}
 }

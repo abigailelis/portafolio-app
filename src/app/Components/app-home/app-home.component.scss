@@ -1,106 +1,66 @@
-.info {
+.home {
     display: flex;
-    flex-direction: column;
-    align-items: start;
-    text-align: justify;
-    gap: 2rem;
-}
-
-.section-info {
-    width: 70%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem;
+    max-width: 80rem;
 }
 
 .section-img {
     display: flex;
     justify-content: center;
-    width: 30%;
+    width: 20rem;
 }
 
-.home {
+.info {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: start;
+    margin: 1.5rem 0 0 0;
+    gap: 2rem;
 }
 
-h1 {
-    font-size: 30px;
-}
-
-h2 {
-    font-size: 25px;
+.section-info {
+    width: 40rem;
+    margin: 0 5rem;
 }
 
 img {
-    width: 200px;
-    height: auto;
-    border-radius: 1.7em;
+    width: 20rem;
+    height: 20rem;
+    border-radius: 20rem;
+    object-fit: cover;
+    box-shadow: 2px 2px 5px rgb(62, 62, 62);
 }
 
 
-.box {
-    width: 200px;
-    display: grid;
-    place-content: center;
-    color: white;
-    text-shadow: 0 1px 0 #000;
-
-    --border-angle: 0turn; // For animation.
-    --main-bg: conic-gradient(from var(--border-angle),
-            #213,
-            #112 5%,
-            #112 60%,
-            #213 95%);
-
-    border: solid 4px transparent;
-    border-radius: 2em;
-    --gradient-border: conic-gradient(from var(--border-angle), transparent 25%, #08f, #f03 99%, transparent);
-
-    background:
-        // padding-box clip this background in to the overall element except the border.
-        var(--main-bg) padding-box,
-        // border-box extends this background to the border space
-        var(--gradient-border) border-box,
-        // Duplicate main background to fill in behind the gradient border. You can remove this if you want the border to extend "outside" the box background.
-        var(--main-bg) border-box;
-
-    background-position: center center;
-
-    animation: bg-spin 3s linear infinite;
-
-    @keyframes bg-spin {
-        to {
-            --border-angle: 1turn;
-        }
-    }
-
-    &:hover {
-        animation-play-state: paused;
-    }
-}
-
-@property --border-angle {
-    syntax: "<angle>";
-    inherits: true;
-    initial-value: 0turn;
-}
-
-@media screen and (max-width: 650px) {
+@media (max-width: 991px), (min-resolution: 1.2dppx)  {
     .home {
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
+        padding:  2rem .2rem;
+        gap: 2rem;
     }
 
-    .box {
-        margin-top: 2em;
+    .info{
+        align-items: center;
+    }
+    .section-info {
+        width: 20rem;
+        margin: 0;
     }
 
     .section-img {
-        width: 100%;
+        width: 15rem;
     }
 
-    .info {
-        align-items: center;
+    img {
+        width: 15rem;
+        height: 15rem;
+        border-radius: 15rem;
     }
-
+    h1{
+        text-align: center;
+    }
 }

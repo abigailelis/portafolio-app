@@ -1,22 +1,22 @@
-[
+export const navLinks = [
     {
         "name": "Home",
         "link": "/home"
     },
     {
-        "name": "Proyects",
+        "name": "Proyectos",
         "link": "/projects"
     },
     {
-        "name": "Skills",
+        "name": "Habilidades",
         "link": "/skills"
     },
     {
-        "name": "Contact",
+        "name": "Contacto",
         "link": "/social"
     },
     {
         "name": "About me",
         "link": "/about"
     }
-]
+];

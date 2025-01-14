@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule, provideClientHydration } from '@angular/platform-browser';
-import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -10,6 +9,10 @@ import { AppNavComponent } from './Components/app-nav/app-nav.component';
 import { AppProjectsComponent } from './Components/app-projects/app-projects.component';
 import { AppSkillsComponent } from './Components/app-skills/app-skills.component';
 import { AppSocialComponent } from './Components/app-social/app-social.component';
+import { AppSkillSectionComponent } from './Components/app-skills/app-skills-section/app-skills-section.component';
+import { AppProjectComponent } from './Components/app-projects/app-project/app-project.component';
+import { AppButtonCvComponent } from './Components/app-button-cv/app-button-cv.component';
+import { AppInfoSectionComponent } from './Components/app-about/app-info-section/app-info-section.component';
 
 @NgModule({
   declarations: [
@@ -19,12 +22,15 @@ import { AppSocialComponent } from './Components/app-social/app-social.component
     AppNavComponent,
     AppProjectsComponent,
     AppAboutComponent,
-    AppSkillsComponent
+    AppSkillsComponent,
+    AppProjectComponent,
+    AppButtonCvComponent,
+    AppInfoSectionComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    AppSkillSectionComponent
   ],
   providers: [
     provideClientHydration()

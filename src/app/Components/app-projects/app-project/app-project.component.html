@@ -1,0 +1,23 @@
+<div *ngFor="let project of projects" class="card-project">
+    <img [src]="project.img" class="img-top" [alt]="project.name">
+    <div class="card-body-project">
+        <div>
+            <h5 class="card-title-project">{{project.name}}</h5>
+        </div>
+        <div class="buttons-group">
+            <div class="btn-box" type="button">
+                <a [href]="project.link" target="_blank" class="btn btn-tag">
+                    <i class="bi bi-box-arrow-up-right"></i>
+                    Ver ejemplo
+                </a>
+            </div>
+            <div class="btn-box" type="button">
+                <a [href]="project.github" target="_blank" class="btn btn-tag">
+                    <i class="bi bi-github"></i>
+                    Ver codigo
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+

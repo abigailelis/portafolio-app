@@ -1,54 +1,15 @@
-.card{
-    width: 90%;
-    margin: 3rem;
-    border: 1px solid rgba(0, 0, 0, 0.446);
-    box-shadow: 1px 1px 5px gray;
+.cards {
+    width: calc(100vw - 17px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
 }
 
-i {
-    color: rgb(31, 30, 30);
-    font-size: 40px;
-}
 
-i:hover {
-    transition: fill 0.3s ease;
-    background: #00B7E9;
-    background: linear-gradient(to right, #00B7E9 0%, #BE05CF 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.card-body {
-    border-top: 1px solid rgba(0, 0, 0, 0.446);
-    padding: 2rem;
-}
-
-h5 {
-    color: rgb(34, 33, 33);
-}
-
-@media screen and (max-width: 650px) {
-    .cards{
-        display:flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .card{
+@media screen and (max-width: 991px) {
+    .cards {
         width: 100%;
-        margin: 0;
-        margin-bottom: 20px;
-    }
-
-    .card-body{
-        padding: 10px;
-    }
-
-    i {
-        font-size: 20px;
-    }
-
-    h5{
-        font-size:15px;
-    }
+    }    
 }

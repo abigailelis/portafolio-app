@@ -10,20 +10,19 @@ p {
 }
 
 main {
-    width: 100%;
+    max-width: calc(100vw - 17px);
+    min-height: calc(100vh - 4.3rem);
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 4rem;
-    box-sizing: inherit;
-    position: relative;
+    flex: 1;
 }
 
-@media (max-width: 650px) {
-    .container {
+@media (max-width: 991px) {
+    main {
         flex-direction: column;
-        justify-content: flex-start;
-        padding: 2rem 1rem;
+        justify-content: center;
+        max-width: 100vw;
     }
 
 }

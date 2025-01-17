@@ -1,15 +1,10 @@
 .skills-container {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    min-height: 100vh;
-    width: calc(100vw - 17px);
-    padding: 1rem 4rem;
+    min-height: calc(100vh - 5rem);
+    padding: 0 4rem;
 }
 
 @media (max-width: 991px){
     .skills-container {
-        width: 100vw;
-        padding: 1rem;
+        padding: 2rem;
     }
 }

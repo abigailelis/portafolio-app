@@ -1,9 +1,9 @@
 .navbar {
-    justify-content: space-between;
     align-items: center;
     padding: 1.5rem 2rem;
 }
 
+/* Line style on hover */
 .navbar-nav .nav-link::after {
     content: "";
     position: absolute;
@@ -11,8 +11,7 @@
     bottom: 0;
     width: 0;
     height: 2px;
-    background: linear-gradient(to right, #757474 0%, #bec808 100%);
-    /* Color de la línea */
+    background: linear-gradient(to right, var(--shadow) 0%, var(--font-second-color) 100%);
     transition: width 0.3s ease;
 }
 
@@ -29,7 +28,7 @@ li {
     font-size: 1.2rem;
 }
 
-@media (max-width: 991px){
+@media (max-width: 991px) {
     .navbar {
         align-items: flex-start;
         padding: .5rem;

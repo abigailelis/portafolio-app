@@ -1,26 +1,37 @@
-*{
+:root {
+    --bg-color: rgba(190, 200, 8, 0.702);
+    --bg-second-color: rgba(28, 28, 28, 0.846);
+    --font-color: rgb(82, 82, 82);
+    --font-second-color: rgb(190, 200, 8);
+    --font-third-color: rgb(37, 37, 37);
+    --font-fourth-color: rgb(255, 255, 255);
+    --shadow: rgb(157, 157, 157);
+}
+
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: monospace, 'Courier New', Courier;
     font-size: 18px;
-    color:#525252;
+    color: var(--font-color);
+    max-width: 100vw;
 }
 
-p, li{
+p, li {
     font-weight: 500;
     line-height: 2rem;
 }
 
-li{
+li {
     list-style: none;
 }
 
 span, h1, h2 {
-    color: #bec808;
+    color: var(--font-second-color);
     font-weight: 800;
 }
 
@@ -32,29 +43,44 @@ h2 {
     font-size: 1.6rem;
 }
 
-
-a.btn{
-    background-color: #bec808b3;
-    color:rgb(37, 37, 37);
+.icon {
+    color: var(--font-color);
+    font-size: 6rem;
+    text-shadow: 2px 2px 5px var(--shadow);
 }
 
-a.btn:hover{
-    background-color: rgb(37, 37, 37);
-    color:#bec808b3;
+.icon:hover {
+    text-shadow: none;
+    background: var(--bg-color);
+    background-clip: inherit;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-@media (max-width: 991px){
+a.btn {
+    background-color: var(--bg-color);
+    color: var(--font-third-color);
+}
+
+a.btn:hover {
+    background-color: var(--font-third-color);
+    color: var(--bg-color);
+}
+
+main, .navbar, .container-fluid {
+    flex: 1;
+}
+
+@media (max-width: 991px) {
     body {
-        max-width: 100vw;
         font-size: 14px;
     }
 
-    h1{
+    h1 {
         font-size: 1.2rem;
     }
 
-    h2{
+    h2 {
         font-size: 1.1rem;
     }
-    
 }

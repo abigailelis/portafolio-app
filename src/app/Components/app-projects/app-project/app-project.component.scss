@@ -1,32 +1,11 @@
-.buttons-group, .card-project, .card-body-project{
-    display: flex;
-    align-items: center;
+i, .btn, .card-body-project {
+    color: var(--font-fourth-color);
 }
 
 .card-project {
-    flex-direction: column;
-    justify-content: center;
     position: relative;
-    width: calc(100vw - 17px);
+    width: 100vw;
     min-height: 100vh;
-}
-
-i, .btn, .card-body-project {
-    color: white;
-}
-
-.buttons-group{
-    justify-content: space-between;
-    gap: 1rem;
-}
-
-.card-body-project {
-    justify-content: space-around;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    background-color: rgba(28, 28, 28, 0.846);
-    padding: 2rem 4rem 2rem 4rem;
 }
 
 .img-top {
@@ -35,20 +14,30 @@ i, .btn, .card-body-project {
     object-fit: cover;
 }
 
+.card-body-project {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--bg-second-color);
+    padding: 4rem;
+}
 
+.buttons-group {
+    gap: 1rem;
+}
 
-@media (max-width: 991px), (min-resolution: 1.5dppx)  {
-    .card-project{
+@media (max-width: 991px) {
+    .card-project {
         width: 100vw;
     }
+
     .card-body-project {
         flex-direction: column;
-        justify-content: space-between;
-        padding: .5rem;
+        padding: 1.5rem;
         gap: 1rem;
     }
 
-    .card-title-project, i, .btn{
+    .card-title-project, i, .btn {
         font-size: 1rem;
     }
 

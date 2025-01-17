@@ -1,15 +1,4 @@
 .cards {
-    width: calc(100vw - 17px);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     gap: 5rem;
 }
 
-
-@media screen and (max-width: 991px) {
-    .cards {
-        width: 100%;
-    }    
-}

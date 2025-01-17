@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component} from '@angular/core';
 
 interface Skill {
     name: string;
@@ -11,7 +11,7 @@ interface Skill {
     styleUrl: './app-skills.component.scss',
     standalone: false
 })
-export class AppSkillsComponent implements OnInit {
+export class AppSkillsComponent {
   constructor() { }
 
   ngOnInit(): void {
@@ -19,24 +19,24 @@ export class AppSkillsComponent implements OnInit {
   }
 
   skillsFront: Skill[] = [
-    { name: "HTML 5", class: "fab fa-html5" },
-    { name: "CSS 3",  class: "fab fa-css3-alt" },
-    { name: "JavaScript", class: "fab fa-js" },
-    { name: "Angular", class: "fab fa-angular" },
-    { name: "Bootstrap", class: "fab fa-bootstrap" }
+    { name: "HTML 5", class: "fab fa-html5 icon" },
+    { name: "CSS 3",  class: "fab fa-css3-alt icon" },
+    { name: "JavaScript", class: "fab fa-js icon" },
+    { name: "Angular", class: "fab fa-angular icon" },
+    { name: "Bootstrap", class: "fab fa-bootstrap icon" }
   ];
 
   skillsBack: Skill[] = [
-    { name: "Java", class: "bi bi-filetype-java" },
-    { name: "SQL", class: "bi bi-filetype-sql" },
-    { name: "PHP", class: "bi bi-filetype-php" }
+    { name: "Java", class: "bi bi-filetype-java icon" },
+    { name: "SQL", class: "bi bi-filetype-sql icon" },
+    { name: "PHP", class: "bi bi-filetype-php icon" }
   ];
 
   skillsTools: Skill[] = [
-    { name: "Trello", class: "bi bi-trello" },
-    { name: "Git", class: "bi bi-git" },
-    { name: "Github", class: "bi bi-github" },
-    { name: "VS Code", class: "bi bi-code-slash" }
+    { name: "Trello", class: "bi bi-trello icon" },
+    { name: "Git", class: "bi bi-git icon" },
+    { name: "Github", class: "bi bi-github icon" },
+    { name: "VS Code", class: "bi bi-code-slash icon" }
   ];
 
 }

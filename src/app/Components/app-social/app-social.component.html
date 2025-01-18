@@ -3,37 +3,7 @@
   <h1 class="text-center">CONTÁCTAME</h1>
 
   <div class="social-links d-flex align-items-center justify-content-between">
-    <!-- Github -->
-    <div class="contact-box d-flex flex-column justify-content-center align-items-center">
-      <a href="https://github.com/abigailelis" target="_blank">
-        <i class="fab fa-github icon"></i>
-      </a>
-      <P>GitHub</P>
-    </div>
-
-    <!-- Linkedin -->
-    <div class="contact-box d-flex flex-column justify-content-center align-items-center">
-      <a href="https://www.linkedin.com/in/abigail-elis/" target="_blank">
-        <i class="fab fa-linkedin icon"></i>
-      </a>
-      <p>LinkedIn</p>
-    </div>
-
-    <!-- Whatsapp -->
-    <div class="contact-box d-flex flex-column justify-content-center align-items-center">
-      <a href="https://wa.me/5492262366099" target="_blank">
-        <i class="fab fa-whatsapp icon"></i>
-      </a>
-      <p>WhatsApp</p>
-    </div>
-
-    <!-- Gmail -->
-    <div class="contact-box d-flex flex-column justify-content-center align-items-center">
-      <a href="mailto:abbigail.elis@gmail.com" target="_blank">
-        <i class="far fa-envelope icon"></i>
-      </a>
-      <p>Gmail</p>
-    </div>
+    <app-contact-box [contacts]="contacts"></app-contact-box>
   </div>
 
 </div>

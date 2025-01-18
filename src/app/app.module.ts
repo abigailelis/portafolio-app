@@ -13,6 +13,7 @@ import { AppSkillSectionComponent } from './Components/app-skills/app-skills-sec
 import { AppProjectComponent } from './Components/app-projects/app-project/app-project.component';
 import { AppButtonCvComponent } from './Components/app-button-cv/app-button-cv.component';
 import { AppInfoSectionComponent } from './Components/app-about/app-info-section/app-info-section.component';
+import { AppContactBoxComponent } from './Components/app-social/app-contact-box/app-contact-box.component';
 
 @NgModule({
   declarations: [
@@ -25,13 +26,14 @@ import { AppInfoSectionComponent } from './Components/app-about/app-info-section
     AppSkillsComponent,
     AppProjectComponent,
     AppButtonCvComponent,
-    AppInfoSectionComponent
+    AppInfoSectionComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    AppSkillSectionComponent
-  ],
+    AppSkillSectionComponent,
+    AppContactBoxComponent
+],
   providers: [
     provideClientHydration()
   ],

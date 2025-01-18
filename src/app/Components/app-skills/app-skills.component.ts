@@ -14,10 +14,6 @@ interface Skill {
 export class AppSkillsComponent {
   constructor() { }
 
-  ngOnInit(): void {
-    throw new Error('Method not implemented.');
-  }
-
   skillsFront: Skill[] = [
     { name: "HTML 5", class: "fab fa-html5 icon" },
     { name: "CSS 3",  class: "fab fa-css3-alt icon" },

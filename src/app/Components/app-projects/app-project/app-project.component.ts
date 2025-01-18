@@ -15,19 +15,19 @@ export class AppProjectComponent {
         name: "Social links profile challenge",
         img: "/assets/Screenshot-social-links-profile.PNG",
         link: "https://social-links-profile-challenge-abigail.vercel.app/",
-        github: "https://github.com/abigailelis/git-test/tree/main/social-links-profile"
+        github: "https://github.com/abigailelis/social-links-profile-challenge"
     },
     {
         name: "Blog preview card challenge",
         img: "/assets/Screenshot-card.PNG",
         link: "https://blog-preview-card-challenge-abigail.vercel.app/",
-        github: "https://github.com/abigailelis/git-test/tree/main/blog-preview-card"
+        github: "https://github.com/abigailelis/blog-preview-card-challenge"
     },
     {
         name: "QR code component challenge",
         img: "/assets/Screenshot.PNG",
         link: "https://qr-code-component-challenge-abigail.vercel.app/",
-        github: "https://github.com/abigailelis/git-test/tree/main/qr-code-component"
+        github: "https://github.com/abigailelis/qr-code-component-challenge"
     },
     {
       name: "Zombilandia -  Proyecto Angular",

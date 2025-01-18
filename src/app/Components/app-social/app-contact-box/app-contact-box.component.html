@@ -1,0 +1,7 @@
+
+<div *ngFor="let contact of contacts" class="contact-box d-flex flex-column justify-content-center align-items-center">
+    <a href="{{ contact.link }}" target="_blank">
+      <i class= "{{ contact.class }}"></i>
+    </a>
+    <p>{{ contact.name }}</p>
+  </div>

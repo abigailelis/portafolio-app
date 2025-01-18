@@ -13,6 +13,7 @@ interface Skill {
     templateUrl: './app-skills-section.component.html',
     styleUrls: ['./app-skills-section.component.scss']
 })
+
 export class AppSkillSectionComponent {
     @Input() title: string | undefined;
     @Input() skills: Skill[] | undefined;
